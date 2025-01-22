@@ -104,6 +104,11 @@ kubelet_identity {
   user_assigned_identity_id = azurerm_user_assigned_identity.kubelet.id
 }
 
+key_vault_secrets_provider {
+    secret_rotation_enabled = true
+    
+}
+
  network_profile {
   network_plugin     = "azure" # Azure CNI
   service_cidr       = "10.1.4.0/22"
