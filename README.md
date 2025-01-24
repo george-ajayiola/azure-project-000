@@ -5,6 +5,7 @@ In this project, I  have documented a solution for automating the deployment of 
 
 - **2 Virtual Networks:** `vnet-hub` and `vnet-aks`
 - **A Bastion**
+- **A Virtual Machine** that will serve as jumpbox to access the private AKS  cluster
 - **Container Registry** with a private endpoint to ensure private traffic
 - **Container apps:** To be used as a Github Actions Self-hosted runner (since our container registry is private, we cannot use Github hosted runners)
 - **Private DNS Zones:**
